@@ -67,7 +67,7 @@ Maqola parchalari ostida Maykning tortmasida "materials" deb yozilgan papka bor 
 - Barcha skriptlar parchalanishi va bir nechta fayllarga bo'linishi kerak; 
 - Har bir ish uchun asosiy skript fayli **main.sh** deb nomlanishi kerak; 
 - Barcha skriptlarda noto'g'ri kiritish uchun tekshiruvlar bo'lishi kerak (barcha parametrlar ko'rsatilmagan, noto'g'ri formatlangan parametrlar va boshqalar); 
-- Barcha yozma skriptlar *Ubuntu Server 20.04 LTS* virtual mashinasida ishga tushirilishi kerak.
+- Barcha yozma skriptlar *Ubuntu Server 24.04 LTS* virtual mashinasida ishga tushirilishi kerak.
 
 ## Part 1. Qalam namunasi
 
