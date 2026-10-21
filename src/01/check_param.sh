@@ -16,5 +16,5 @@ print_param() {
         echo "Error: parameter must not be a number." >&2
         exit 1
     fi
-    echo "$param"
+    printf '%s\n' "$param"
 }

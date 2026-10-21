@@ -2,6 +2,12 @@
 
 Linux basic bash scripting and system research.
 
+## Automated checks
+
+Initial CI checks Bash syntax for all scripts, runs ShellCheck on Part 1 and
+the Part 5 path validator, and tests their input handling. Other functionality
+is not yet covered by behavior tests. See [local commands and CI explanation](docs/ci.md).
+
 💡 [Tap here](https://new.oprosso.net/p/4cb31ec3f47a4596bc758ea1861fb624) **to leave your feedback on the project**. It's anonymous and will help our team make your educational experience better. We recommend completing the survey immediately after the project.
 
 ## Contents
