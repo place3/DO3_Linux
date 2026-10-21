@@ -1,0 +1,24 @@
+name: Bash checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check syntax of all Bash scripts
+        run: find src -type f -name '*.sh' -print0 | xargs -0 -n 1 bash -n
+      - name: Install ShellCheck
+        run: sudo apt-get update && sudo apt-get install --yes shellcheck
+      - name: Lint text input and directory validation
+        run: shellcheck -x -P SCRIPTDIR src/01/main.sh src/01/check_param.sh src/05/validate.sh
+      - name: Run behavior tests
+        run: python3 -m unittest discover -s tests -v
